@@ -1,0 +1,13 @@
+default_language_version:
+  python: python3.12
+
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: "v0.3.7"
+    hooks:
+      - id: ruff
+        name: ruff linter
+        args: [--fix, --exit-non-zero-on-fix]
+        types_or: [python, pyi, jupyter]
+      - id: ruff-format
+        types_or: [python, pyi, jupyter]

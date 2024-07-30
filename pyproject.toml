@@ -1,0 +1,20 @@
+[project]
+name = "sync-example"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "Amit Parekh", email = "7276308+amitkparekh@users.noreply.github.com" },
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+plugins = ["sync-pre-commit-lock"]
